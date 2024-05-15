@@ -232,4 +232,27 @@ for (let i = altura2 - 1; i >= 1; i--) {
   console.log(triangulo2);
 }
 
+// Punto 16: Ordenar un array sin usar SORT
+console.log("// Punto 16: Ordenar un array sin usar SORT");
 
+// Array desordenado
+let numerosDesordenados = [5, 2, 4, 1, 3, 9, 7, 8, 6, 0];
+
+// Variables para el intercambio de elementos
+let auxiliar;
+let posicionActual;
+
+// Ordenar el array usando dos bucles for anidados
+for (let i = numerosDesordenados.length - 1; i >= 0; i--) {
+  for (let j = 0; j < i; j++) {
+    if (numerosDesordenados[j] > numerosDesordenados[j + 1]) {
+      // Intercambiar elementos usando variables auxiliares
+      auxiliar = numerosDesordenados[j];
+      numerosDesordenados[j] = numerosDesordenados[j + 1];
+      numerosDesordenados[j + 1] = auxiliar;
+    }
+  }
+}
+
+// Imprimir el array ordenado
+console.log("Array ordenado:", numerosDesordenados);

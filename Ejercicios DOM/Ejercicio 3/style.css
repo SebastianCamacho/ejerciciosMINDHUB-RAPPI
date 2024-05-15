@@ -1,0 +1,52 @@
+.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+.col{
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.botones .row .col input{
+    width: 100%;
+    
+}
+
+#Notas{
+    max-height: 40vh;
+    height: 30vh;
+}
+
+.formulario{
+    background-color: tan;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 2vh;
+}
+
+
+.container2{
+    border-radius: 15px;
+}
+body{
+    background-color: tan;
+    background-image: url(3c7b4448a6afd54529c93ec12fba5a12.png);
+
+}
+
+.card{
+    background-image: url(gratis-png-papel-de-nota-post-it-nota-thumbnail.png);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.rayado{
+    text-decoration: line-through;
+}
