@@ -19,9 +19,9 @@ botonLimpiar.addEventListener("click", function () {
 
 let botonAgregar = document.getElementById("btnAgregar");
 botonAgregar.addEventListener("click", function () {
-  // if (inputTitulo.value.length <= 0 || inputNota.value.length <= 0) {
-  //   alert("Los campos no pueden estar vacios");
-  // } else {
+  if (inputTitulo.value.length <= 0 || inputNota.value.length <= 0) {
+    alert("Los campos no pueden estar vacios");
+  } else {
   nota = {
     titulo: inputTitulo.value,
     descripcion: inputNota.value,
@@ -32,7 +32,7 @@ botonAgregar.addEventListener("click", function () {
   inputTitulo.value = "";
   inputNota.value = "";
   console.log(Notas);
-  // }
+  }
 });
 
 function mostrarNotas(nt) {
